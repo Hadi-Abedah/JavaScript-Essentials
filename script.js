@@ -3,7 +3,7 @@ document.getElementById("btnSearch").addEventListener("click", () => {
   const resultsContainer = document.getElementById("results");
   resultsContainer.innerHTML = ""; // clear previous results
 
-  fetch('data.json')
+  fetch('travel_recommendation_api.json')
     .then(response => response.json())
     .then(data => {
       let matches = [];
